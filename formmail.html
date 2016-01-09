@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>FORMULÁRIO PARA TESTE DE ENVIO DE E-MAIL POR CGI</title>
+</head>
+<body>
+<p>FORMUL&Aacute;RIO PARA TESTE DE ENVIO DE E-MAIL POR CGI</p>
+ 
+<!--Esse campo é obrigatório para uso na revernda/-->
+<form method="post" action="http://www18.locaweb.com.br/scripts/FormMail.pl">
+<p>
+<!-- Informe o endereço de e-mail que irá receber os contatos do formulário/-->
+    <input type=HIDDEN name="recipient" value="email@dominio.com.br">
+    <input type=HIDDEN name="subject" value="Contato">
+ 
+<!-- Informe o endereço de e-mail que está enviando a mensagem-->	
+    <input type=HIDDEN name="email" value="email@dominio.com.br">
+</p>
+  <table width="28%" border="1">
+ <tr>
+  <td height="19" width="25%">Nome: 
+  </td>
+  <td height="19" width="75%">
+  <input type="text" name="nome">
+  </td>
+ </tr>
+ <tr>
+  <td height="19" width="25%">E-mail: 
+  </td>
+  <td height="19" width="75%">
+  <input type="text" name="email" id="email">
+  </td>
+ </tr>
+ <tr>
+  <td height="19" width="25%">Telefone:</td>
+  <td height="19" width="75%">
+  <input type="text" name="telefone">
+  </td>
+ </tr>
+ <tr>
+  <td height="19" width="25%">Comentarios:</td>
+  <td height="19" width="75%">
+  <textarea name="comentarios"></textarea>
+  </td>
+ </tr>
+ <tr>
+  <td height="19" width="25%">
+  </td>
+  <td height="19" width="75%">
+  <input type="submit" name="Submit" value="Enviar">
+  <input type="reset" name="Reset" value="Limpar">
+  </td>
+ </tr>
+ </table>
+</form>
+</body>
+</html>
